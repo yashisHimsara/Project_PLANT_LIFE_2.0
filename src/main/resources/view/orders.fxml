@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="855.0" prefWidth="1167.0" style="-fx-background-color: #0A8960;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.plantLife.Controller.OrdersFromController">
+   <children>
+      <TextField fx:id="txtOrderId" layoutX="56.0" layoutY="140.0" onKeyReleased="#txtOrderIdOnKryReleased" prefHeight="35.0" prefWidth="211.0" promptText="              O001">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="56.0" layoutY="26.0" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPlantCount" layoutX="893.0" layoutY="140.0" onKeyReleased="#txtPlantCountOnKryReleased" prefHeight="35.0" prefWidth="211.0" promptText="               20">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAvailableQty" editable="false" layoutX="612.0" layoutY="140.0" onKeyReleased="#txtSoldPlantOnKryReleased" prefHeight="35.0" prefWidth="211.0" promptText="qty">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="txtDate" layoutX="332.0" layoutY="227.0" prefHeight="38.0" prefWidth="211.0" promptText="           25/11/2023" />
+      <Button fx:id="btnSave" layoutX="631.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: #95FF54; -fx-background-radius: 45;" text="Add ToCart">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="880.0" layoutY="224.0" mnemonicParsing="false" onAction="#btnUpdateonAction" prefHeight="41.0" prefWidth="95.0" style="-fx-background-color: EEC760; -fx-background-radius: 45;" text="Update">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="778.0" layoutY="224.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="95.0" style="-fx-background-color: FF5454; -fx-background-radius: 45;" text="Delete">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <TableView fx:id="tblPlants" layoutX="50.0" layoutY="344.0" prefHeight="488.0" prefWidth="932.0">
+        <columns>
+          <TableColumn fx:id="colPlantId" prefWidth="124.33332824707031" text="Plant Id" />
+          <TableColumn fx:id="colPlantName" prefWidth="131.33334350585938" text="Plant Name" />
+            <TableColumn fx:id="colPrice" prefWidth="145.66665649414062" text="Price" />
+            <TableColumn fx:id="colQty" prefWidth="184.0" text="QTY" />
+            <TableColumn fx:id="colSubTotal" prefWidth="156.33331298828125" text="Sub Total" />
+            <TableColumn fx:id="colSubTotal1" prefWidth="187.0" text="Action" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="1039.0" layoutY="766.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="96.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="75.0" layoutY="113.0" text="Order ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="210.0" text="Customer ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="619.0" layoutY="113.0" text="Plant Available Qty" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="904.0" layoutY="113.0" text="Plant Count" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="198.0" text="Date" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="116.0" text="Plant ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPlaceOrder" layoutX="669.0" layoutY="287.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="41.0" prefWidth="143.0" style="-fx-background-color: #309ad9; -fx-background-radius: 10;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbPlants" layoutX="333.0" layoutY="138.0" onAction="#cmbPlantOnAction" prefHeight="40.0" prefWidth="208.0" promptText="Select Plant" />
+      <ComboBox fx:id="cmbCustomerId" layoutX="55.0" layoutY="240.0" prefHeight="34.0" prefWidth="208.0" />
+      <Button fx:id="btnReport" layoutX="834.0" layoutY="286.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="41.0" prefWidth="143.0" style="-fx-background-color: #309ad9; -fx-background-radius: 10;" text="Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Orders" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31ac2af2-db39-4ce1-a5e5-5328735601d2">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Report"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM orders]]>
+	</queryString>
+	<field name="OrderID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="OrderID"/>
+		<property name="com.jaspersoft.studio.field.label" value="OrderID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="OrderDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="OrderDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="OrderDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="PlantCount" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="PlantCount"/>
+		<property name="com.jaspersoft.studio.field.label" value="PlantCount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="CustomerID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CustomerID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CustomerID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="10" width="209" height="48" uuid="d1cbff20-9140-452e-ae1b-f591b54fe6e9"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Plant Life]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="209" y="7" width="193" height="30" uuid="56f66962-e1d5-4fbb-babc-dfc1e61fda68"/>
+				<textElement>
+					<font size="22" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Orders Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="14" width="100" height="30" uuid="615052a9-120c-457f-a034-84e14125e571">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7f18735b-101e-45be-ac39-2447d241d71e"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[OrderID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="168" y="15" width="100" height="30" uuid="26299970-f2ce-47a9-a059-79d053a459ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5cb88a3a-aeea-4740-b59f-0fb73af1ce47"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[OrderDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="15" width="100" height="30" uuid="c6db2531-5514-45ab-98cc-9e29fdd53824">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="936cbc33-eb03-4d2b-b98f-6da1fffffa67"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[PlantCount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="18" width="100" height="30" uuid="201a70ec-a466-4798-be7b-bfdb77d2c5f2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0720137e-28d3-4a23-b186-741f8aad80da"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[CustomerID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="5" width="100" height="30" uuid="be7e8c49-e2f4-436d-aee7-a71fe0caa06e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7f18735b-101e-45be-ac39-2447d241d71e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{OrderID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="5" width="100" height="30" uuid="67371c3b-e012-4ba0-8c5a-64e3b3ccc228">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5cb88a3a-aeea-4740-b59f-0fb73af1ce47"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{OrderDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="4" width="100" height="30" uuid="c6a62706-ccda-4ffc-bb39-c3bb275aa114">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="936cbc33-eb03-4d2b-b98f-6da1fffffa67"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PlantCount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="6" width="100" height="30" uuid="59bc5bc8-157f-4490-9ba5-2df3bbfa7407">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0720137e-28d3-4a23-b186-741f8aad80da"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CustomerID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

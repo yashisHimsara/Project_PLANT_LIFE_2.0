@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="855.0" prefWidth="1167.0" style="-fx-background-color: #0A8960;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.plantLife.Controller.InventoryFromController">
+   <children>
+      <TextField fx:id="txtInventoryId" layoutX="67.0" layoutY="145.0" prefHeight="35.0" prefWidth="211.0" promptText="               I001">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGreenHouse" layoutX="689.0" layoutY="145.0" prefHeight="35.0" prefWidth="211.0" promptText="         number 03">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPlantId" layoutX="373.0" layoutY="145.0" prefHeight="35.0" prefWidth="211.0" promptText="             P001">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="56.0" layoutY="17.0" text="Inventory Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="115.0" text="Inventory ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="115.0" text="Plant ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="702.0" layoutY="115.0" text="Green House" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="240.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #95FF54; -fx-background-radius: 45;" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="584.0" layoutY="261.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: EEC760; -fx-background-radius: 45;" text="Update">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="408.0" layoutY="261.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: FF5454; -fx-background-radius: 45;" text="Delete">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblInventory" layoutX="73.0" layoutY="354.0" prefHeight="462.0" prefWidth="820.0">
+        <columns>
+          <TableColumn fx:id="clmInventoryId" prefWidth="253.0" text="Inventory ID" />
+          <TableColumn fx:id="clmPlantId" prefWidth="282.0" text="Plant ID" />
+            <TableColumn fx:id="clmGreenHouse" prefWidth="284.0" text="Green House" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="989.0" layoutY="746.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="96.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

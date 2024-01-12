@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="961.0" prefWidth="1167.0" style="-fx-background-color: #0A8960;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.plantLife.Controller.PaymentFromController">
+   <children>
+      <TableView fx:id="tblPay" layoutX="46.0" layoutY="456.0" prefHeight="480.0" prefWidth="930.0">
+        <columns>
+          <TableColumn fx:id="clmpaymentId" prefWidth="192.0" text="Payment ID" />
+            <TableColumn fx:id="clmsoldPlants" prefWidth="194.0" text="Sold Plants" />
+            <TableColumn fx:id="clmplantCount" prefWidth="180.0" text="Plant Count" />
+            <TableColumn fx:id="clmdate" prefWidth="175.0" text="Date" />
+            <TableColumn fx:id="clmprice" prefWidth="186.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSave" layoutX="323.0" layoutY="371.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="41.0" prefWidth="89.0" style="-fx-background-color: #95FF54;" text="Save">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="595.0" layoutY="371.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="89.0" style="-fx-background-color: EEC760;" text="Update">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="455.0" layoutY="371.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="89.0" style="-fx-background-color: FF5454;" text="Delete">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="1046.0" layoutY="876.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="41.0" prefWidth="77.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Label layoutX="396.0" layoutY="23.0" text="Payment Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPaymentId" layoutX="37.0" layoutY="101.0" text="Payment ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerId" layoutX="30.0" layoutY="163.0" text="Customer ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCustomerId" layoutX="180.0" layoutY="167.0" onAction="#cmbCustomerOnAction" prefHeight="32.0" prefWidth="166.0" />
+      <Label fx:id="lblCustomerName" layoutX="513.0" layoutY="167.0" text="Customer Name :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="401.0" layoutY="101.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="29.0" layoutY="251.0" text="Order ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbOrderId" layoutX="148.0" layoutY="251.0" onAction="#cmbOrderIdOnAction" prefHeight="32.0" prefWidth="166.0" />
+      <Label fx:id="lblSoldPlant" layoutX="403.0" layoutY="251.0" text="Sold Plant :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPlantCount" layoutX="749.0" layoutY="251.0" text="Plant Count :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtDate" layoutX="478.0" layoutY="100.0" prefHeight="32.0" prefWidth="172.0" />
+      <TextField fx:id="txtPrice" layoutX="923.0" layoutY="100.0" prefHeight="35.0" prefWidth="200.0" />
+      <Label fx:id="lblprice" layoutX="821.0" layoutY="102.0" text="Price :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPaymentIdset" layoutX="180.0" layoutY="100.0" text="Payment ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerNameset" layoutX="703.0" layoutY="167.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSoldPlantset" layoutX="536.0" layoutY="251.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPlantCountset" layoutX="898.0" layoutY="251.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

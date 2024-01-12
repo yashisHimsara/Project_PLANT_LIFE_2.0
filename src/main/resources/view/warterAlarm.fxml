@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="730.0" prefWidth="1167.0" style="-fx-background-color: #4c6293;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.plantLife.Controller.WarterAlarmFromController">
+   <children>
+      <Label layoutX="297.0" layoutY="36.0" text="Water Alarm System" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="56.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="66.0" layoutY="190.0" prefHeight="443.0" prefWidth="312.0" style="-fx-background-color: #293967;">
+         <children>
+            <Button layoutX="89.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnOkOnAction" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #202a42;" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Button>
+            <TextField fx:id="txtTime" layoutX="48.0" layoutY="63.0" prefHeight="50.0" prefWidth="211.0" promptText="     06:30" style="-fx-background-color: #202a42;">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font></TextField>
+            <Slider layoutX="26.0" layoutY="235.0" majorTickUnit="10.0" prefHeight="38.0" prefWidth="270.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #5d75b6;" value="70.0" />
+            <Label layoutX="46.0" layoutY="198.0" text="volume" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <Button layoutX="1036.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnbackOnAction" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: #202a42;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="800.0" layoutY="190.0" prefHeight="443.0" prefWidth="312.0" style="-fx-background-color: #293967;">
+         <children>
+            <Button layoutX="105.0" layoutY="344.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #202a42;" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Button>
+            <TextField fx:id="txtTime2" layoutX="51.0" layoutY="55.0" prefHeight="50.0" prefWidth="211.0" promptText="     06:00" style="-fx-background-color: #202a42;">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </TextField>
+            <Slider layoutX="26.0" layoutY="242.0" majorTickUnit="10.0" prefHeight="38.0" prefWidth="270.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #5d75b6;" value="70.0" />
+            <Label layoutX="46.0" layoutY="205.0" text="volume" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="427.0" layoutY="190.0" prefHeight="443.0" prefWidth="312.0" style="-fx-background-color: #293967;">
+         <children>
+            <Button layoutX="105.0" layoutY="347.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #202a42;" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></Button>
+            <TextField fx:id="txtTime1" layoutX="51.0" layoutY="57.0" prefHeight="50.0" prefWidth="211.0" promptText="     13:00" style="-fx-background-color: #202a42;">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </TextField>
+            <Slider layoutX="18.0" layoutY="241.0" majorTickUnit="10.0" prefHeight="38.0" prefWidth="270.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #5d75b6;" value="70.0" />
+            <Label layoutX="38.0" layoutY="204.0" text="volume" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

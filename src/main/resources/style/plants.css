@@ -1,0 +1,22 @@
+#WelcomeLable{
+    -fx-font-size: 36px;
+    -fx-fill: 128000;
+    -fx-font-weight: Bold Italic;
+    -fx-text-fill-color : black;
+
+}#shopLable{
+    -fx-font-size: 36px;
+    -fx-fill: 128000;
+    -fx-font-weight: Bold Italic;
+    -fx-text-fill-color : green;
+
+}#searchBar{
+    -fx-font-size: 26px;
+    -fx-fill: 128000;
+    -fx-font-weight: Bold Italic;
+    -fx-text-fill-color : green;
+}
+
+ #btnSave{
+
+ }

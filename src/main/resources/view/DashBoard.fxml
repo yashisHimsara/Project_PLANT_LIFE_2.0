@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="719.0" prefWidth="1168.0" style="-fx-background-color: #086c4c; -fx-background-radius: 45;" stylesheets="@../style/plant.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.plantLife.Controller.DashBoardFormController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="730.0" prefWidth="283.0" style="-fx-background-color: ffff; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="btnCustomer" layoutX="24.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="65.0" prefWidth="236.0" style="-fx-background-color: #086c4c;" stylesheets="@../style/plant.css" text="Customer" textFill="WHITE" />
+            <Button fx:id="btnOrders" layoutX="24.0" layoutY="414.0" mnemonicParsing="false" onAction="#btnOrdersOnAction" prefHeight="65.0" prefWidth="236.0" style="-fx-background-color: #086c4c; -fx-background-radius: 45;" stylesheets="@../style/plant.css" text=" Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInventory" layoutX="25.0" layoutY="154.0" mnemonicParsing="false" onAction="#btnInventoryOnAction" prefHeight="65.0" prefWidth="236.0" style="-fx-background-color: #086c4c; -fx-background-radius: 45;" stylesheets="@../style/plant.css" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPayment" layoutX="29.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnPaymentOnAction" prefHeight="65.0" prefWidth="226.0" style="-fx-background-color: #086c4c;" stylesheets="@../style/plant.css" text="Payment" textFill="WHITE" />
+            <Button fx:id="plantLable" layoutX="32.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnPlantsOnAction" prefHeight="65.0" prefWidth="226.0" style="-fx-background-color: #086c4c;" stylesheets="@../style/plant.css" text="Plants" textFill="WHITE" />
+            <Button fx:id="btnSupplier" layoutX="24.0" layoutY="238.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="65.0" prefWidth="236.0" style="-fx-background-color: #086c4c;" stylesheets="@../style/plant.css" text="Supplier" textFill="WHITE" />
+            <Button fx:id="warterLable" layoutX="20.0" layoutY="589.0" mnemonicParsing="false" onAction="#btnWarterAlarmOnAction" prefHeight="65.0" prefWidth="242.0" style="-fx-background-color: #086c4c;" stylesheets="@../style/plant.css" text="Warter Alarm" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblTimer" layoutX="1026.0" layoutY="28.0" text="Time">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="28.0" text="Main DashBoard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="598.0" fitWidth="849.0" layoutX="318.0" layoutY="107.0" opacity="0.46">
+         <image>
+            <Image url="@../image/main.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

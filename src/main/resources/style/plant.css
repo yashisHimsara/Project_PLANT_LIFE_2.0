@@ -1,0 +1,113 @@
+#AnchorPane1{
+    -fx-background-color : #0F6550;
+    -fx-background-radius : 45;
+}
+#AnchorPane2{
+    -fx-background-color :  F4F1F1;
+    -fx-background-radius : 45;
+}
+#welcome{
+    -fx-font-size: 28px;
+    -fx-fill: #408d45;
+    -fx-font-weight: bold;
+
+}
+#login{
+    -fx-font-size: 28px;
+    -fx-fill: 128000;
+    -fx-font-weight: Arial Black;
+}
+#system{
+    -fx-font-size: 28px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+}
+#userName{
+    -fx-background-color : E7E7E7;
+    -fx-font-size: 18px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+}
+#password{
+    -fx-background-color : E7E7E7;
+    -fx-font-size: 18px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+}
+#pass{
+    -fx-background-color : red;
+    -fx-fill: red;
+}
+#loginbu{
+    -fx-background-radius : 45;
+}
+
+#mainDash{
+    -fx-background-color : #AEDDB6;
+    -fx-background-radius : 45;
+}
+#plantd{
+    -fx-background-color : ffffff;
+    -fx-background-radius : 45;
+}
+#warter{
+    -fx-background-color : ffffff;
+    -fx-background-radius : 45;
+}
+#cust{
+    -fx-background-color : ffffff;
+    -fx-background-radius : 45;
+}
+#buy{
+    -fx-background-color : ffffff;
+    -fx-background-radius : 45;
+}
+#dashLabel{
+    -fx-font-size: 46px;
+    -fx-fill: 128000;
+    -fx-font-weight: Bold Italic;
+    -fx-text-fill-color : black;
+}
+#plantLable{
+    -fx-font-size: 30px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+}
+#warterLable{
+    -fx-font-size: 30px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+}
+#custLable{
+    -fx-font-size: 30px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+}
+#btnPayment{
+    -fx-font-size: 30px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+}
+
+#btnCustomer{
+    -fx-font-size: 30px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+
+}#btnSupplier{
+    -fx-font-size: 30px;
+    -fx-fill: 128000;
+    -fx-font-weight: bold;
+    -fx-background-radius : 45;
+}
+ #btnsupp{
+     -fx-background-radius : 45;
+     -fx-background-color : ffff;
+ }

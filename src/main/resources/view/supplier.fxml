@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="730.0" prefWidth="1167.0" style="-fx-background-color: #0A8960;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.plantLife.Controller.SupplierFromController">
+   <children>
+      <TextField fx:id="txtsuplierId" layoutX="48.0" layoutY="59.0" onKeyReleased="#txtSupplierIdOnKeyReleased" prefHeight="40.0" prefWidth="192.0" promptText="           S001">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtprice" layoutX="44.0" layoutY="174.0" onKeyReleased="#txtPriceOnKeyReleased" prefHeight="40.0" prefWidth="192.0" promptText="            500">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtplantName" layoutX="590.0" layoutY="59.0" onKeyReleased="#txtPlantNameOnKeyReleased" prefHeight="40.0" prefWidth="192.0" promptText="           Okid">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSave" layoutX="367.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #95FF54; -fx-background-radius: 45;" stylesheets="@../style/plants.css" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="513.0" layoutY="178.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="38.0" prefWidth="99.0" style="-fx-background-color: FF5454; -fx-background-radius: 45;" text="Delete ">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="653.0" layoutY="178.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="93.0" style="-fx-background-color: EEC760; -fx-background-radius: 45;" text="Update">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <TableView fx:id="tblSupplier" layoutX="63.0" layoutY="262.0" prefHeight="453.0" prefWidth="899.0">
+        <columns>
+          <TableColumn fx:id="clmSupplierId" prefWidth="185.0" text="Supplier ID" />
+            <TableColumn fx:id="clmPlantId" prefWidth="182.0" text="Plant ID" />
+            <TableColumn fx:id="clmPlantName" prefWidth="184.0" text="Plant Name" />
+            <TableColumn fx:id="clmPlantCount" prefWidth="173.0" text="Plant Count" />
+            <TableColumn fx:id="clmPrice" prefWidth="174.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtplantCount" layoutX="862.0" layoutY="57.0" onKeyReleased="#txtPlantCountOnKeyReleased" prefHeight="40.0" prefWidth="192.0" promptText="              50">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="1023.0" layoutY="645.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="43.0" prefWidth="87.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtplantId" layoutX="321.0" layoutY="59.0" onKeyReleased="#txtPlantIdOnKeyReleased" prefHeight="40.0" prefWidth="192.0" promptText="            P001">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label layoutX="111.0" layoutY="28.0" text="Supplier ID" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="28.0" text="Plant ID" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="139.0" text="Price" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="909.0" layoutY="28.0" text="Plant Count" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="635.0" layoutY="28.0" text="Plant  Name" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
